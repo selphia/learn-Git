@@ -54,3 +54,12 @@ $ git remote rename <old name> <new name>
 
 移除远程仓库
 $ git remote rm <name>
+
+git push 提交不需要输入密码
+$ git config --global credential.helper store
+
+然后输入一次以后就再不用输入了
+会创建两个文件
+	/home/$USER
+	.git-credential		[用户名 密码
+	.gitconfig			[用户名 邮箱
