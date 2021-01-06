@@ -1,0 +1,25 @@
+创建并和切换到一个全新的分支
+
+git checkout --orphan latest_branch
+
+添加所有文件
+
+git add -A
+
+提交更改
+
+git commit -am "commit message"
+
+删除分支
+
+git branch -D master
+
+将当前分支重命名为master
+
+git branch -m master
+
+最后，强制更新存储库
+
+git push -f origin master
+
+PS：这不会保留以前的提交历史
